@@ -1,0 +1,1 @@
+Convert the REST API application from the following repository to use Content templating (EJS)
