@@ -1,3 +1,5 @@
+//初期設定みたいなやつ
+
 const path = require("path");
 const express = require("express");
 const bodyParser = require("body-parser");
@@ -15,8 +17,6 @@ app.set("views", "src/views");
 
 /* ------------------------------- middleware ------------------------------- */
 app.use("/api/members", require("./routes/members"));
-
-// app.get("/", (req, res) => res.json({ msg: "Health Check" }));
 app.get("/", (req, res) => res.render("homepage", { title: "Homepage" }));
 
 
